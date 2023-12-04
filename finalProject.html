@@ -1,82 +1,99 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <title>WEB-115 Final Project</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Michael Patterson, WEB-115.0001, Final Project November/December 2023-->
 </head>
+
 <body>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand ali" href="#">
+            <img src="./assets/logo.jpeg" width="200" class="d-inline-block align-top" alt="Build Your Meal Plan">
+        </a>
+        <span class="h4 text-muted">Michael Patterson<br>WEB-115<br>Section 1</span>
+    </nav>
     <div class="alert alert-info alert-dismissible fade show" role="alert">
         To choose multiple options below, press and hold either "Ctrl" or "Shift"!
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-          </button>
-      </div>
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand ali" href="#">
-            <img src="./assets/logo.jpeg" width="200" class="d-inline-block align-top" alt="Build Your Meal Plan">                      
-        </a>
-        <span class="h4 text-muted">Michael Patterson<br>WEB-115<br>Section 1</span>
-    </nav>
-    <br>
+        </button>
+    </div>
     <div class="container">
-    <form id="myForm">
-        <div class="form-group">
-            <label for="nameInput">Who are we building this plan for?</label>
-            <input type="text" class="form-control" id="nameInput" placeholder="Your Name">
-        </div>
-        <div class="form-group">
-            <label for="goalInput">What is the goal for this week?</label>
-            <input type="text" class="form-control" id="goalInput" placeholder="What are we getting done?">
-        </div>
-        <div class="form-group">
-            <label for="emailInput">What is the best email address to use?</label>
-            <input type="email" class="form-control" id="emailInput" placeholder="name@email.com">
-        </div>
-        <div class="form-group">
-            <label for="breakfastInput">Choose one or more breakfast options</label>
-            <select multiple="multiple" class="form-control" id="breakfastInput">
-                <option selected>Eggs</option>
-                <option>Granola</option>
-                <option>Bacon</option>
-                <option>Sausage</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="snackInput">Choose one or more snack options</label>
-            <select multiple class="form-control" id="snackInput">
-                <option selected>Yogurt</option>
-                <option>Fresh Fruit</option>
-                <option>Fresh Vegetables</option>
-                <option>Hummus</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="lunchInput">Choose one or more lunch options</label>
-            <select multiple class="form-control" id="lunchInput">
-                <option selected>Salad</option>
-                <option>Tuna Salad</option>
-                <option>Chicken Salad</option>
-                <option>Quinoa</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="dinnerInput">Choose one or more dinner options</label>
-            <select multiple class="form-control" id="dinnerInput">
-                <option selected>Fish</option>
-                <option>Steak</option>
-                <option>Pork</option>
-                <option>Chicken</option>
-            </select>
-        </div>
-        <button id="submit" class="btn btn-primary">Submit</button>
-    </form>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <form id="myForm">
+            <div class="form-group">
+                <label for="nameInput">Who are we building this plan for?</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="goalInput">What is the goal for this week?</label>
+                <input type="text" class="form-control" id="goalInput" placeholder="What are we getting done?">
+            </div>
+            <div class="form-group">
+                <label for="emailInput">What is the best email address to use?</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="name@email.com">
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="breakfastInput">Choose one or more breakfast options</label>
+                        <select multiple="multiple" class="form-control" id="breakfastInput">
+                            <option selected>Eggs</option>
+                            <option>Granola</option>
+                            <option>Bacon</option>
+                            <option>Sausage</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="snackInput">Choose one or more snack options</label>
+                        <select multiple class="form-control" id="snackInput">
+                            <option selected>Yogurt</option>
+                            <option>Fresh Fruit</option>
+                            <option>Fresh Vegetables</option>
+                            <option>Hummus</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <label for="lunchInput">Choose one or more lunch options</label>
+                            <select multiple class="form-control" id="lunchInput">
+                                <option selected>Salad</option>
+                                <option>Tuna Salad</option>
+                                <option>Chicken Salad</option>
+                                <option>Quinoa</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="dinnerInput">Choose one or more dinner options</label>
+                            <select multiple class="form-control" id="dinnerInput">
+                                <option selected>Fish</option>
+                                <option>Steak</option>
+                                <option>Pork</option>
+                                <option>Chicken</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <button id="submit" class="btn btn-info btn-lg btn-block">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="projectJS.js"></script>
-</div>    
 </body>
+
 </html>
